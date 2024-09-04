@@ -1,4 +1,4 @@
-# grupo6N_surrealismo
+# 6N_Blog_Surrealismo
 # Projeto
 
 Este Projeto foi criado para acompanhamento dos alunos da materia de Projeto em Design: Digital
