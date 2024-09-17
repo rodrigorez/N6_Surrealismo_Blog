@@ -21,6 +21,8 @@ header {
   text-align: center;
   font-size: 35px;
   color: white;
+  background-color: #292828;
+  overflow: hidden;
 }
 
 .text-overlay {
@@ -34,7 +36,45 @@ header {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-/* Using flexbox for layout */
+.header {
+  background-color: #292828;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 3px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #444444;
+  color: white;
+}
+
+.header a.active {
+  background-color:#ffdfb9;
+  color: black;
+  font-weight: bold;
+}
+
+.header-right {
+  display: flex;
+  gap: 15px;
+}
+
 section {
   display: flex;
   justify-content: space-between; /* Image and text side by side */
@@ -85,7 +125,7 @@ article {
   padding: 50px 20px;
   text-align: center;
   font-family: 'Nave', sans-serif; 
-  font-style: italic
+  font-style: italic;
 }
 
 footer {
@@ -110,8 +150,17 @@ footer {
 </head>
 <body style="background-color:#980505;">
 
+<div class="header">
+  <a href="#default" class="logo">Surrealismo</a>
+  <div class="header-right">
+    <a class="active" href="#home">O Movimento</a>
+    <a href="#contact">Artistas</a>
+    <a href="#about">About</a>
+  </div> 
+</div>
+
 <header>
-  <img src="https://i.imgur.com/VCdLDpi.gif" alt="W3Schools.com" style="width:100%;height:auto;">
+  <img src="https://i.imgur.com/VCdLDpi.gif" alt="Surrealismo" style="width:100%;height:100%;">
   <div class="text-overlay">Surrealismo</div>
 </header>
 
@@ -133,9 +182,16 @@ A arte surrealista não se restringiu à pintura, de modo que também influencio
 </section>
 
 <div class="section-black">
-   <h1><p><i>"O surrealismo é destrutivo, mas destrói apenas o que considera algemas que limitam nossa visão." (Salvador Dalí)<i></p></h1>
+   <h1><p><i>"O surrealismo é destrutivo, mas destrói apenas o que considera algemas que limitam nossa visão." (Salvador Dalí)</i></p></h1>
 </div>
 
 <img src="https://cdnm.westwing.com.br/glossary/uploads/br/2015/07/16190250/obra-persist%C3%AAncia-da-mem%C3%B3ria-de-salvador-dali-com-rel%C3%B3gios-derretidos-em-pintura-surrealista_wikiart_c-a1364.jpg" alt="imagem.relogio" style="width:40%;">
 <img src="https://www.infoescola.com/wp-content/uploads/2009/08/surrealismo2.JPG" alt="imagem.maçã" style="width:24%;">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg87MnMkVfZjsP
+<img src="https://m.media-amazon.com/images/I/51MN7D-L9dL._AC_UF894,1000_QL80_.jpg" alt="imagem incompleta" style="width:24%;">
+
+<footer>
+  <p>Rodapé</p>
+</footer>
+
+</body>
+</html>
