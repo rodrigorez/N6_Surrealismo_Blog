@@ -118,6 +118,11 @@ article {
   cursor: pointer;
   font-weight: bold;
 }
+.article {
+    
+  text-align: center;
+  font-family: 'Nave', sans-serif; 
+} 
 
 .section-black {
   background-color: #ffdfb9;
@@ -133,6 +138,31 @@ footer {
   padding: 10px;
   text-align: center;
   color: white;
+
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;  
+}
+
+.image-row div {
+  text-align: center;
+  width: 30%;
+}
+
+.image-row img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-caption {
+  margin-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: white;
 }
 
 @media (max-width: 600px) {
@@ -142,6 +172,7 @@ footer {
 
   img {
     width: 100%;
+    margin-bottom: 20px;
   }
 }
 </style>
@@ -185,9 +216,24 @@ A arte surrealista não se restringiu à pintura, de modo que também influencio
    <h1><p><i>"O surrealismo é destrutivo, mas destrói apenas o que considera algemas que limitam nossa visão." (Salvador Dalí)</i></p></h1>
 </div>
 
-<img src="https://cdnm.westwing.com.br/glossary/uploads/br/2015/07/16190250/obra-persist%C3%AAncia-da-mem%C3%B3ria-de-salvador-dali-com-rel%C3%B3gios-derretidos-em-pintura-surrealista_wikiart_c-a1364.jpg" alt="imagem.relogio" style="width:40%;">
-<img src="https://www.infoescola.com/wp-content/uploads/2009/08/surrealismo2.JPG" alt="imagem.maçã" style="width:24%;">
-<img src="https://m.media-amazon.com/images/I/51MN7D-L9dL._AC_UF894,1000_QL80_.jpg" alt="imagem incompleta" style="width:24%;">
+<article>
+	<h2>Conheça algumas obras</h2>
+
+<div class="image-row">	
+	
+  <div>
+    <img src="https://sergiolongo.com.br/wp-content/uploads/2023/08/Ideias-A-Vida-e-Obra-de-Rene-Magritte-Surrealismo.webp" alt="imagem.relogio">
+    <p class="image-caption">A Persistência da Memória - Salvador Dalí</p>
+  </div>
+  <div>
+    <img src="https://www.infoescola.com/wp-content/uploads/2009/08/surrealismo2.JPG" alt="imagem.maçã">
+    <p class="image-caption">O Filho do Homem - René Magritte</p>
+  </div>
+  <div>
+    <img src="https://m.media-amazon.com/images/I/51MN7D-L9dL._AC_UF894,1000_QL80_.jpg" alt="imagem incompleta">
+    <p class="image-caption">O Grande Masturbador - Salvador Dalí</p>
+  </div>
+</div>
 
 <footer>
   <p>Rodapé</p>
