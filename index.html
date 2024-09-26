@@ -65,7 +65,7 @@ header {
 }
 
 .header a.active {
-  background-color:#ffdfb9;
+  background-color: #ffdfb9;
   color: black;
   font-weight: bold;
 }
@@ -104,6 +104,8 @@ article {
 
 .button-container {
   margin-top: 20px; /* Adds space between text and button */
+  display: flex; /* Ativa o flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
 }
 
 .button {
@@ -118,8 +120,8 @@ article {
   cursor: pointer;
   font-weight: bold;
 }
+
 .article {
-    
   text-align: center;
   font-family: 'Nave', sans-serif; 
 } 
@@ -138,7 +140,6 @@ footer {
   padding: 10px;
   text-align: center;
   color: white;
-
 }
 
 .image-row {
@@ -186,12 +187,12 @@ footer {
   <div class="header-right">
     <a class="active" href="#home">O Movimento</a>
     <a href="#contact">Artistas</a>
-    <a href="#about">About</a>
+    <a href="#about">Obras</a>
   </div> 
 </div>
 
 <header>
-  <img src="https://i.imgur.com/VCdLDpi.gif" alt="Surrealismo" style="width:100%;height:100%;">
+  <img src="https://i.postimg.cc/fbGhBwwG/GIF-ARTE.gif" alt="Surrealismo" style="width:100%;height:100%;">
   <div class="text-overlay">Surrealismo</div>
 </header>
 
@@ -220,7 +221,6 @@ A arte surrealista não se restringiu à pintura, de modo que também influencio
 	<h2>Conheça algumas obras</h2>
 
 <div class="image-row">	
-	
   <div>
     <img src="https://sergiolongo.com.br/wp-content/uploads/2023/08/Ideias-A-Vida-e-Obra-de-Rene-Magritte-Surrealismo.webp" alt="imagem.relogio">
     <p class="image-caption">A Persistência da Memória - Salvador Dalí</p>
@@ -236,7 +236,6 @@ A arte surrealista não se restringiu à pintura, de modo que também influencio
 </div>
 
 <div class="image-row">	
-	
   <div>
     <img src="https://i.postimg.cc/jSMCjJsR/Prancheta-4.png" alt="imagem.relogio">
     <p class="image-caption">A Persistência da Memória - Salvador Dalí</p>
@@ -251,6 +250,61 @@ A arte surrealista não se restringiu à pintura, de modo que também influencio
   </div>
 </div>
 
+<div class="image-row">	
+  <div>
+    <img src="https://i.postimg.cc/SxrgzR3S/aniversario.png" alt="imagem.relogio">
+    <p class="image-caption">Aniversário - Marc Chagall</p>
+  </div>
+  <div>
+    <img src="https://i.postimg.cc/8zZ3nTby/irmaos.png">
+    <p class="image-caption">Irmãos - de Paul Klee </p>
+  </div>
+  <div>
+    <img src="https://i.postimg.cc/fy7q7sLf/meus-avos.png">
+    <p class="image-caption">Meu avós, meus pais e eu - Frida Kahlo </p>
+  </div>
+</div>
+
+    <div class="button-container">
+      <button class="button" onclick="alert('Hello world!')">Conheça mais obras!</button>
+    </div>
+    
+<article>
+	<h2>Conheça algumas artistas</h2>
+
+<div class="image-row">	
+  <div>
+    <img src="https://i.postimg.cc/k5TYLGv1/salvador.png" alt="imagem.relogio">
+    <p class="image-caption">Salvador Dalí</p>
+  </div>
+  <div>
+    <img src="https://i.postimg.cc/HWNDVZ5Z/rene-3.png">
+    <p class="image-caption">René Magritte</p>
+  </div>
+  <div>
+    <img src="https://i.postimg.cc/k5wMZQH0/frida2.png" alt="imagem incompleta">
+    <p class="image-caption">Frida Kahlo</p>
+  </div>
+</div>
+
+<div class="image-row">	
+  <div>
+    <img src="https://i.postimg.cc/BbfqPmP1/max.png" alt="imagem.relogio">
+    <p class="image-caption">Max Ernst</p>
+  </div>
+  <div>
+    <img src="https://i.postimg.cc/QMmvs0hq/tarsila.png">
+    <p class="image-caption">Tarsila do Amaral</p>
+  </div>
+  <div>
+    <img src="https://i.postimg.cc/V6r6CS72/andre.png" alt="imagem incompleta">
+    <p class="image-caption">Andre Breton</p>
+  </div>
+</div>
+
+  <div class="button-container">
+      <button class="button" onclick="alert('Hello world!')">Conheça mais artistas!</button>
+    </div>
 
 <footer>
   <p>O Blog Surrealista</p>
